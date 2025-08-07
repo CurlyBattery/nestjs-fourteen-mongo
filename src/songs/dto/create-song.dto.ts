@@ -21,4 +21,6 @@ export class CreateSongDto {
   @IsString()
   @IsOptional()
   lyrics?: string;
+
+  album?: string;
 }

@@ -1,5 +1,6 @@
 import { Schema, Prop, SchemaFactory } from '@nestjs/mongoose';
-import { HydratedDocument } from 'mongoose';
+import { HydratedDocument, Types } from 'mongoose';
+import { Album } from '../../albums/entities/album.entity';
 
 export type SongDocument = HydratedDocument<Song>;
 
@@ -24,6 +25,12 @@ export class Song {
     required: false,
   })
   lyrics: string;
+
+  @Prop({
+    type: Types.ObjectId,
+    ref: Album.name
+  })
+  album: Album;
 }
 
 export const SongSchema = SchemaFactory.createForClass(Song);

@@ -3,8 +3,8 @@ POST http://localhost:3000/songs
 Content-Type: application/json
 
 {
-  "title": "Hit Em Up",
-  "releasedDate": "2025-08-29",
+  "title": "Hit Em Up 2",
+  "releasedDate": "2026-08-29",
   "duration": "01:34",
   "lyrics": "Е КЕ Е Е"
 }
@@ -14,3 +14,4 @@ GET http://localhost:3000/songs
 GET http://localhost:3000/songs/6894899bc19c1b7fb046a64b
 ### Delete One Song
 DELETE http://localhost:3000/songs/6894899bc19c1b7fb046a64b
+
