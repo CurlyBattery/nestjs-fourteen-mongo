@@ -8,4 +8,9 @@ Content-Type: application/json
   "duration": "01:34",
   "lyrics": "Е КЕ Е Е"
 }
-###
+### Get All Songs
+GET http://localhost:3000/songs
+### Get One Song
+GET http://localhost:3000/songs/6894899bc19c1b7fb046a64b
+### Delete One Song
+DELETE http://localhost:3000/songs/6894899bc19c1b7fb046a64b
